@@ -22,20 +22,21 @@ Before you can run the tests, make sure you have the following installed on your
 ## Project Setup
 
 1. Clone the repository:
-   ```
+
+```
    git clone https://github.com/keianggoro12/satu-tempo-automation.git
-  ```
+```
    
 2. Navigate to the project directory:
-   ```
+```
    cd satu-tempo-automation
-   ```
+```
 
 
 3. Install the dependencies:
-   ```
+```
    mvn clean install
-   ```
+```
 
 4. Make sure your ChromeDriver path is set in your system environment or modify the WebDriver configuration in the project if needed.
 
