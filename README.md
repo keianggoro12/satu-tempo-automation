@@ -51,14 +51,15 @@ Some test cases are disabled to avoid CAPTCHA issues from Cloudflare during repe
 
    Example:
    \`\`\`gherkin
-  # Scenario: To verify if Title and Sub-title Article is show same as requirement
-  #           To verify if post date Article is show same as requirement
-  #           To verify article image display
-  #           To verify article content display
-  #   Given User already on homepage
-  #   When User clicked random article
-  #   Then User verify Title and Sub-title and post date Article
-  #   Then User verifies the article content and image
+   ```  # Scenario: To verify if Title and Sub-title Article is show same as requirement
+     #           To verify if post date Article is show same as requirement
+     #           To verify article image display
+     #           To verify article content display
+     #   Given User already on homepage
+     #   When User clicked random article
+     #   Then User verify Title and Sub-title and post date Article
+     #   Then User verifies the article content and image
+   ```
    \`\`\`
 
    Change to:
