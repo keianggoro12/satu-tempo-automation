@@ -22,19 +22,20 @@ Before you can run the tests, make sure you have the following installed on your
 ## Project Setup
 
 1. Clone the repository:
-   \`\`\`bash
-   git clone https://github.com/your-username/satu-tempo-automation.git
-   \`\`\`
+   ```
+   git clone https://github.com/keianggoro12/satu-tempo-automation.git
+  ```
    
 2. Navigate to the project directory:
-   \`\`\`bash
+   ```
    cd satu-tempo-automation
-   \`\`\`
+   ```
+
 
 3. Install the dependencies:
-   \`\`\`bash
+   ```
    mvn clean install
-   \`\`\`
+   ```
 
 4. Make sure your ChromeDriver path is set in your system environment or modify the WebDriver configuration in the project if needed.
 
@@ -43,15 +44,15 @@ Before you can run the tests, make sure you have the following installed on your
 Some test cases are disabled to avoid CAPTCHA issues from Cloudflare during repeated test execution. To enable all test cases:
 
 1. Open the following file:
-   \`\`\`
+   ```
    src/test/resources/features/SatuTempoLogin.feature
-   \`\`\`
+   ```
 
 2. Uncomment the test cases by removing the \`#\` at the beginning of each scenario. This will enable the full suite of tests.
 
    Example:
-   \`\`\`gherkin
-   ```  # Scenario: To verify if Title and Sub-title Article is show same as requirement
+   ```gherkin
+   # Scenario: To verify if Title and Sub-title Article is show same as requirement
      #           To verify if post date Article is show same as requirement
      #           To verify article image display
      #           To verify article content display
@@ -60,11 +61,10 @@ Some test cases are disabled to avoid CAPTCHA issues from Cloudflare during repe
      #   Then User verify Title and Sub-title and post date Article
      #   Then User verifies the article content and image
    ```
-   \`\`\`
 
    Change to:
 
-   \`\`\`gherkin
+  ```gherkin
   Scenario: To verify if Title and Sub-title Article is show same as requirement
             To verify if post date Article is show same as requirement
             To verify article image display
@@ -73,7 +73,7 @@ Some test cases are disabled to avoid CAPTCHA issues from Cloudflare during repe
     When User clicked random article
     Then User verify Title and Sub-title and post date Article
     Then User verifies the article content and image
-   \`\`\`
+   ```
 
 ### Note
 
@@ -83,9 +83,9 @@ The reason for disabling certain scenarios is that running all test cases in seq
 
 Once the necessary test cases are enabled, you can run the test suite using Maven:
 
-\`\`\`bash
+```bash
 mvn clean test
-\`\`\`
+```
 
 ## Author
 
